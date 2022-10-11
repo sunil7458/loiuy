@@ -393,14 +393,14 @@ const Homepage = () => {
             </div>
           </div>
           <div className="flex justify-center mt-9">
-            <img src={img8} className="w-[50%]" />
+            <img src={img8} className="w-[50%]"  alt="kjh" />
           </div>
 
           <div className="flex justify-center mt-10">
-            <img src={img6} className="w-[50%]" />
+            <img src={img6} className="w-[50%]" alt = "jhg" />
           </div>
           <div className="flex justify-center mt-11">
-            <img src={img9} className="w-[50%]" />
+            <img src={img9} className="w-[50%]"  alt = "jh" />
           </div>
         </div>
 
