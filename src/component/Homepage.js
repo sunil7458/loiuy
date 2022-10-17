@@ -64,7 +64,7 @@ const Homepage = () => {
             <img src={img3} className="w-full  p-4" alt="kj" />
           </div>
           <div className="">
-            <Carousel>
+            
 
             <div className="products    text-white  flex gap-20 w-full  overflow-x-auto  ">
               {data?.map((datas, index) => {
@@ -84,7 +84,7 @@ const Homepage = () => {
               })}
             </div>
 
-            </Carousel>
+           
           </div>
 
           <img src={img4} className="mt-20" alt="d" />
