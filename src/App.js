@@ -7,6 +7,7 @@ import Magnify from './component/Magnify'
 import Cart from './component/Cart'
 import Travels from './component/Travels'
 import Jewe from './component/Jewe'
+// import Buy from './component/Buy'
 
 const App = () => {
   return (
@@ -20,6 +21,8 @@ const App = () => {
 <Route  path='/jewe' element = {<Jewe/>}/>
 <Route  path='/mag' element = {<Magnify/>}/>
 <Route  path='/cart' element = {<Cart/>}/>
+{/* <Route  path='/buy'  element = {<Buy/>} /> */}
+
 </Routes>
 </BrowserRouter>
 

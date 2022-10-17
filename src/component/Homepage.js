@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import  ReactDOM  from "react";
 import img2 from "../Asset/img.png";
 import img3 from "../Asset/j.png";
 import img4 from "../Asset/v.png";
@@ -12,6 +13,8 @@ import img10 from "../component/t.png";
 import { Link } from "react-router-dom";
 import Nav from "./Nav";
 import Footer from "./Footer";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
 
 const Homepage = () => {
   const [data, setdata] = useState();
@@ -62,6 +65,8 @@ const Homepage = () => {
             <img src={img3} className="w-full  p-4" alt="kj" />
           </div>
           <div className="">
+            <Carousel>
+
             <div className="products    text-white  flex gap-20 w-full  overflow-x-auto  ">
               {data?.map((datas, index) => {
                 console.log(data);
@@ -79,6 +84,8 @@ const Homepage = () => {
                 );
               })}
             </div>
+
+            </Carousel>
           </div>
 
           <img src={img4} className="mt-20" alt="d" />
@@ -531,3 +538,5 @@ const Homepage = () => {
 };
 
 export default Homepage;
+
+// ReactDOM.render(<Homepage/>, document.querySelector('.demo-carousel'));

@@ -8,7 +8,7 @@ const Travels = () => {
   const [m, setm] = useState();
 
   useEffect(() => {
-    const d = async () => {
+    const d = async() => {
       const b = await axios.get(
         "https://jsonplaceholder.typicode.com/photos"
       );
@@ -305,6 +305,7 @@ const Travels = () => {
                     price={j.title}
                     price_usd={j.id}
                     name={j.name}
+                    title = {j.title}
                   />
                 );
               })}

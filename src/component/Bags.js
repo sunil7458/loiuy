@@ -13,6 +13,7 @@ const Bags = () => {
       const bagdata = await axios.get("https://fakestoreapi.com/products");
       setdata(bagdata?.data);
       setMapData(bagdata?.data);
+      console.log(bagdata?.data)
     };
 
     fetch();
@@ -307,6 +308,8 @@ const Bags = () => {
                     
                     price= {j.price}
                     name = {j.name}
+
+                    title = {j.title}
                     />
                   );
                 })}
