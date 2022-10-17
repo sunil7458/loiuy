@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import  ReactDOM  from "react";
+
 import img2 from "../Asset/img.png";
 import img3 from "../Asset/j.png";
 import img4 from "../Asset/v.png";
