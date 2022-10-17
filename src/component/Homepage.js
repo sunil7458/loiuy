@@ -13,8 +13,7 @@ import img10 from "../component/t.png";
 import { Link } from "react-router-dom";
 import Nav from "./Nav";
 import Footer from "./Footer";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel } from 'react-responsive-carousel';
+
 
 const Homepage = () => {
   const [data, setdata] = useState();
